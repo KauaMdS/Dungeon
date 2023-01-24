@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+        <link rel="shortcut icon" href="img/Baú.ico" type="image/x-icon">
+        <link rel="stylesheet" href="confg/estilomenu.css">
+    <script src="confg/funcoesmenu.js" defer></script>
+</head>
+<body>
+    <div class="game">
+        <img src="img/ideias/arcade2.gif" class="arcade">
+
+        <div class="interface">
+            <div class="cenario">
+                <img src="img/fundo/fundo.png" class="fundo1">
+                <img src="img/fundo/fundo.png" class="fundo2">
+            </div>
+            <audio src="stop.mp3"></audio>
+            <img src="img/fundo/chão.png" class="chao">
+            <img src="img/inimigos/Animated_Statue.gif" class="inimigo">
+            <img src="img/personagem/parado.png" class="protagonista">
+            <div class="nublado"></div>     
+        </div>
+           
+        <img src="img/ideias/fliperamaa.png" class="fliperama">
+            <div id="placar">--------</div>
+            <div class="botoes">
+                <img src="img/ideias/BotãoInfo.png" class="redd" onclick="Redd()">
+                <img src="img/ideias/BotãoVerde.png" class="greenn" onclick="Greenn()">
+                <img src="img/ideias/BotãoAzul.png" class="bluee" onclick="Bluee()">
+            </div>
+    </div>
+        <div class="menu">
+            <img src="img/fundo/menu.png" class="fundo">
+            <h1 onclick="historia()">Dungeon</h1>
+            <input type="button" class="start" value="Start">
+            <input type="text" class="melhor">
+            <p class="creditos">
+                <strong>Feito por:<br/>
+                Kauã M. , João e K. Yuuki.</strong>
+            </p>
+            <img src="img/fundo/nota.png" class="musica" onclick="musica()">
+        </div>
+</body>
+</html>

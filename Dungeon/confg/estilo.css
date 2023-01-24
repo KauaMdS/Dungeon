@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(23, 1, 37);
+}
+
+.game {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.interface {
+    position:relative;
+    width: 850px;
+    height: 460px;
+    left: 50%;
+    top: 50%;
+    margin-top: -230px;
+    margin-left: -425px;
+
+    border: 40px solid rgb(36, 31, 31);
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.fliperama {
+    position: absolute;
+    width: 1000px;
+    height: 735px;
+    left: 50%;
+    top: 50%;
+    margin-top: -367.5px;
+    margin-left: -500px;
+}
+
+.arcade {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* -------------- Personagens -------------- */
+
+/* --- Protagonisa - */
+
+.protagonista {
+    position: absolute;
+    width: 80px;
+    bottom: 0;
+    left: 50px;
+    padding-bottom: 50px;
+}
+
+.pulando {
+    animation: pular 500ms ease-out; 
+}
+
+@keyframes pular {
+    0% {
+        bottom: 0;
+    }
+    35% {
+        bottom: 120px;
+    }
+    50% {
+        bottom: 120px;
+    }
+    65% {
+        bottom: 120px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+
+.inimigo {
+    position: absolute;
+    width: 100px;
+    bottom: 0;
+    padding-bottom: 44px;
+    animation: ataque 1s infinite linear;
+}
+
+@keyframes ataque {
+    from {
+        right: -100px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+/* -------------- Cenário -------------- */
+
+.cenario {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.fundo1 {
+    order: 1;
+    width: 590px;
+    height: 410px;
+    top: 0;
+}
+
+.fundo2 {
+    order: 2;
+    width: 590px;
+    height: 410px;
+    top: 0;
+}
+
+@keyframes movimento {
+    from {
+        right: -100%;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+.chao {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    bottom: 0;
+}
+
+/* -------------- Botões -------------- */
+
+.botoes {
+    position: absolute;
+    width: 820px;
+    height: 735px;
+    left: 50%;
+    top: 50%;
+    margin-top: -367.5px;
+    margin-left: -410px;
+    padding-bottom: 35px;
+
+    display: flex;
+    flex-direction: rum;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.redd {
+    width: 140px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.greenn {
+    width: 140px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.bluee {
+    width: 140px;
+    height: 50px;
+    cursor: pointer;
+}
+
+/* -------------- Comandos -------------- */
+
+.MenuRestart {
+    position: absolute;
+    width: 250px;
+    height: 210px;
+    top: 50%;
+    margin-top: -105px;
+    left: 50%;
+    margin-left: -125px;
+
+    border: 2px solid black;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    display: none;
+}
+
+.fundo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    position: absolute;
+    width: 100%;
+    top: 30px;
+    left: 50%;
+    margin-left: -50%;
+
+    font-family: 'Arcade', Arial, Helvetica, sans-serif;
+    font-size: 30pt;
+    line-height: center;
+    text-align: center;
+}
+
+h1:hover {
+    color: rgb(46, 43, 43);
+    cursor: pointer;
+}
+
+input {
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    left: 50%;
+    margin-left: -60px;
+    bottom: 25px;
+
+    border-radius: 10px;
+    border: 2px solid #000;
+    background: rgb(170, 152, 114);
+
+    font-size: 11pt;
+}
+
+input:hover {
+    cursor: pointer;
+    background: rgba(221, 195, 124, 0.534);
+}
+
+.pause {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    top: 26%;
+    right: 0;
+    margin-right: 65px;
+
+    border: 2px solid black;
+    background: rgba(156, 148, 112, 0.814);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+
+    font: normal 12pt Arial;
+    color: #000;
+    text-align-last: center;
+    font-weight: bolder;
+}
+
+.pause:hover {
+    background: rgba(206, 185, 126, 0.76);
+    cursor: pointer;
+}
+
+.musica {
+    position: absolute;
+    width: 25px;
+    height: 22.5px;
+    top: 26%;
+    right: 0;
+    margin-right: 41px;
+
+    border: 2px solid red;
+    background: rgba(156, 148, 112, 0.814);
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    overflow: hidden;
+
+    font: normal 16pt Arial;
+    color: rgb(142, 0, 0);
+    font-weight: bolder;
+    text-align-last: justify;
+}
+
+.musica:hover{
+    background: rgba(206, 185, 126, 0.76);
+    cursor: pointer;
+}
+
+#placar {
+    position: absolute;
+    width: 270px;
+    height: 35px;
+    bottom: 50%;
+    margin-bottom: -250px;
+    left: 50%;
+    margin-left: -135px;
+    
+    border-radius: 8px;
+    border: 3px solid black;
+    background: rgb(47, 47, 47);
+
+    font-size: 16pt;
+    font-family: 'Arcade', Arial, Helvetica, sans-serif;
+    color: rgb(194, 194, 105);
+    font-weight: normal;
+    line-height: center;
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'Arcade';
+    src: url('../font/ARCADE_I.TTF'), url('../font/ARCADE_R.TTF'), url('../font/ARCADE_N.TTF');
+    font-weight: normal;
+    font-style: normal;
+}

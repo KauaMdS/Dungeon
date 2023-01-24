@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeon</title>
+        <link rel="shortcut icon" href="img/Baú.ico" type="image/x-icon">
+        <link rel="stylesheet" href="confg/estilo.css">
+    <script src="confg/funcoes.js" defer></script>
+</head>
+<body>
+    <div class="game">
+        <img src="img/ideias/arcade2.gif" class="arcade">
+
+        <div class="interface">
+            <div class="cenario">
+                <img src="img/fundo/fundo.png" class="fundo1">
+                <img src="img/fundo/fundo.png" class="fundo2">
+            </div>
+            <audio src="stop.mp3" loop = 'true'></audio>
+            <img src="img/inimigos/Animated_Statue.gif" class="inimigo">
+            <img src="img/personagem/exit_menu.gif" class="protagonista">
+            <img src="img/fundo/chão.png" class="chao">
+        </div>
+
+        <img src="img/ideias/fliperamaa.png" class="fliperama">
+            <div id="placar">Placar:0</div>
+            <div class="botoes">
+                <img src="img/ideias/BotãoVermelho.png" class="redd" onclick="Redd()">
+                <img src="img/ideias/BotãoVerde.png" class="greenn" onclick="Greenn()">
+                <img src="img/ideias/BotãoAzul.png" class="bluee" onclick="Bluee()">
+                <div class="musica" onclick="musica()">♫</div>
+                <!-- <div class="pause" onclick="pause()">||</div> -->
+            </div>
+        
+        <div class="MenuRestart">
+            <img src="img/fundo/menu.png" class="fundo">
+            <h1 onclick="IrMenu()">Game Over</h1>
+            <input type="button" value="Recomeçar" onclick="restart()">
+        </div>
+    </div>
+</body>
+</html>

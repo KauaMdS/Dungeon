@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(23, 1, 37);
+}
+
+.game {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.interface {
+    position:relative;
+    width: 850px;
+    height: 460px;
+    left: 50%;
+    top: 50%;
+    margin-top: -230px;
+    margin-left: -425px;
+
+    border: 40px solid rgb(36, 31, 31);
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.fliperama {
+    position: absolute;
+    width: 1000px;
+    height: 735px;
+    left: 50%;
+    top: 50%;
+    margin-top: -367.5px;
+    margin-left: -500px;
+}
+
+.arcade {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* -------------- Menu -------------- */
+
+.menu {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    left: 50%;
+    margin-left: -175px;
+    top: 50%;
+    margin-top: -175px;
+
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    overflow: hidden;
+}
+
+.fundo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    top: 20px;
+    left: 40px;
+
+    font-size: 32pt;
+}
+
+h1:hover {
+    color: rgb(85, 81, 81);
+    cursor: pointer;
+}
+
+.start {
+    position: absolute;
+    border-radius: 15px;
+    border: 2px solid black;
+    background: rgba(148, 137, 89, 0.814);
+    cursor: pointer;
+
+    width: 230px;
+    height: 40px;
+    top: 90px;
+    left: 60px;
+
+    font-family: 'Arcade';
+    font-size: 20pt;
+    color: black;
+    line-height: center;
+    text-align: center;
+}
+
+.start:hover{
+    background: rgba(221, 195, 124, 0.37);
+}
+
+.melhor {
+    position: absolute;
+    border-radius: 15px;
+    border: 2px solid black;
+    background: rgba(148, 137, 89, 0.814);
+
+    width: 230px;
+    height: 150px;
+    top: 135px;
+    left: 60px;
+
+    font-family: 'Arcade';
+    color: black;
+    font-size: 16pt;
+}
+
+.musica {
+    position: absolute;
+    width: 30px;
+    bottom: 15px;
+    right: 15px;
+
+    border: 1px solid red;
+    background: rgba(255, 0, 0, 0.273);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.musica:hover{
+    background: rgba(249, 231, 181, 0.429);
+}
+
+.creditos {
+    position: absolute;
+    width: 100%;
+    bottom: 15px;
+
+    line-height: center;
+    text-align: center;
+    font: normal 10pt Arial;
+}
+
+/* -------------- Personagens -------------- */
+
+.protagonista {
+    position: absolute;
+    width: 80px;
+    bottom: 0;
+    left: 50px;
+    padding-bottom: 50px;
+}
+
+.inimigo {
+    position: absolute;
+    width: 100px;
+    bottom: 0;
+    padding-bottom: 44px;
+    right: 30px;
+}
+
+/* -------------- Cenário -------------- */
+
+.cenario {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.fundo1 {
+    order: 1;
+    width: 590px;
+    height: 410px;
+    top: 0;
+}
+
+.fundo2 {
+    order: 2;
+    width: 590px;
+    height: 410px;
+    top: 0;
+}
+
+.chao {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    bottom: 0;
+}
+
+.nublado {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.608);
+}
+
+/* -------------- Botões -------------- */
+
+.botoes {
+    position: absolute;
+    width: 820px;
+    height: 735px;
+    left: 50%;
+    top: 50%;
+    margin-top: -367.5px;
+    margin-left: -410px;
+    padding-bottom: 35px;
+
+    display: flex;
+    flex-direction: rum;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.redd {
+    width: 140px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.greenn {
+    width: 140px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.bluee {
+    width: 140px;
+    height: 50px;
+    cursor: pointer;
+}
+
+/* -------------- Comandos -------------- */
+
+#placar {
+    position: absolute;
+    width: 270px;
+    height: 35px;
+    bottom: 50%;
+    margin-bottom: -250px;
+    left: 50%;
+    margin-left: -135px;
+    
+    border-radius: 8px;
+    border: 3px solid black;
+    background: rgb(47, 47, 47);
+
+    font-size: 16pt;
+    font-family: 'Arcade', Arial, Helvetica, sans-serif;
+    color: rgb(194, 194, 105);
+    font-weight: normal;
+    line-height: center;
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'Arcade';
+    src: url('../font/ARCADE_I.TTF'), url('../font/ARCADE_R.TTF'), url('font/ARCADE_N.TTF');
+    font-weight: normal;
+    font-style: normal;
+}

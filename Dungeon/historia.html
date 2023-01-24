@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História</title>
+    <link rel="shortcut icon" href="img/Baú.ico" type="image/x-icon">
+    <style>
+        .fundo {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        .historia{
+            position: absolute;
+            width: 550px;
+            height: 670px;
+            left: 50%;
+            margin-left: -275px;
+            top: 50%;
+            margin-top: -335px;
+
+            border: 2px solid #000;
+            background: rgb(170, 152, 114);
+            border-radius: 15px;
+            box-shadow: 1px 1px 4px #000;
+
+            text-align: center;
+        }
+
+        input {
+            position: absolute;
+            width: 80px;
+            height: 30px;
+            margin-top: 20px;
+            margin-left: 10px;
+
+            border-radius: 10px;
+            background: rgb(170, 152, 114);
+        }
+
+        input:hover {
+            background: rgba(207, 188, 135, 0.774);
+            cursor: pointer;
+        }
+
+        h1 {
+            font-family: 'Arcade';
+            font-size: 18pt;
+        }
+
+        h2 {
+            font-family: 'Arcade';
+            font-size: 14pt;
+        }
+
+        p {
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 12pt;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+
+        li {
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 12pt;
+        }
+
+        @font-face {
+            font-family: 'Arcade';
+            src: url('../font/ARCADE_I.TTF'), url('../font/ARCADE_R.TTF'), url('../font/ARCADE_N.TTF');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <img src="img/fundo/menu.png" class="fundo">
+        <input type="button" value="Voltar">
+        <div class="historia">
+            <h1>Dungeon</h1>
+                <p>
+                    Nosso Heroi consegue derrotar o grande mal das profundezas da masmorra, mas precisa sair da masmorra (Dungeon) o mais rápido possivel, antes que a masmorra começar a desmorronar.
+                </p>
+            <h1>Instrucoes</h1>
+                <p>
+                    Não deixe o inimigo de atacar, pule por cima dele para desviar de seus ataques!
+                </p>
+                <h2>Game</h2>
+                    <li>Pular = Barra de Espaço ou Sete para Cima.</li>
+                    <li>Recomeçar = r.</li>
+                <h2>Fliperama</h2>
+                    <li>Botão Vermelho = Executa um pulo do protagonista.</li>
+                    <li>Botão Verde = Retorna ao Menu.</li>
+                    <li>Botão Azul = Recomeça do game.</li>
+                <h2>Inspirado</h2>
+                    <p>Pixel Dungeon</p>
+                    <p>http://pixeldungeon.watabou.ru/</p>
+                <h2><br/>Feito</h2>
+                    <p class="creditos"><em>Feito por: Kauã M. , João e Kauã Yuuki.</p> 
+        </div>
+    </div>
+<script>
+    const Voltar = document.querySelector('input')
+
+    Voltar.addEventListener("click", () =>{
+        window.location.replace("menu.html")
+    })
+
+    document.onkeydown = Teclado
+    function Teclado(e){
+        if(e.keyCode == 20 || e.keyCode == 9) {
+
+            window.location.replace("menu.html")
+        }
+    }
+</script>
+</body>
+</html>
