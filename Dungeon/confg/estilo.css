@@ -58,7 +58,7 @@ body {
 }
 
 .pulando {
-    animation: pular 500ms ease-out; 
+    animation: pular 500ms ease-out;
 }
 
 @keyframes pular {
